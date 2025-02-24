@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS_Task-6</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .login-container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        height: 400px;
+        width: 420px;
+        position: relative;
+      }
+
+      .close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 25px;
+        cursor: pointer;
+      }
+
+      .profile-img {
+        width: 100px;
+        border-radius: 50%;
+        margin-top: 10px;
+      }
+
+      .login-container h2 {
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .input-container {
+        text-align: left;
+        margin: 15px 0;
+        margin-right: 20px;
+      }
+
+      .input-container label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .input-container input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+
+      .login-btn {
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4px;
+        margin-top: 10px;
+      }
+
+      .login-btn:hover {
+        background-color: #45a049;
+      }
+
+      .remember-me {
+        text-align: left;
+        font-size: 14px;
+        margin-top: 10px;
+      }
+
+      .cancel-btn {
+        background-color: #f44336;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: 14px;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-left: -230px;
+      }
+
+      .cancel-btn:hover {
+        background-color: #d32f2f;
+      }
+
+      .forgot-password {
+        float: right;
+        margin-top: 30px;
+        font-size: 14px;
+      }
+
+      .forgot-password a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .forgot-password a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <span class="close">&times;</span>
+      <img src="./images/img.jpeg" alt="Profile Image" class="profile-img" />
+      <div class="input-container">
+        <label>Username</label>
+        <input type="text" placeholder="Enter Username" />
+      </div>
+
+      <div class="input-container">
+        <label>Password</label>
+        <input type="password" placeholder="Enter Password" />
+      </div>
+
+      <button class="login-btn">Login</button>
+
+      <div class="remember-me"><input type="checkbox" /> Remember me</div>
+
+      <button class="cancel-btn">Cancel</button>
+
+      <div class="forgot-password">
+        <a href="#">Forgot password?</a>
+      </div>
+    </div>
+  </body>
+</html>

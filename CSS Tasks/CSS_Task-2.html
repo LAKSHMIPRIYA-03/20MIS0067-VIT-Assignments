@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width", initial-scale=1.0" />
+    <title>Assignment-1_CSS2</title>
+    <style>
+      /* Vertical Navigation Bar */
+      .vertical-nav {
+        width: 200px;
+        border: 1px solid black;
+      }
+      .vertical-nav a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: blue;
+        background-color: lightblue;
+        border-bottom: 1px solid white;
+      }
+      .vertical-nav a:first-child {
+        background-color: orange;
+        color: white;
+        font-weight: bold;
+      }
+
+      /* Horizontal Navigation Bar */
+      .horizontal-nav {
+        display: flex;
+        border: 1px solid black;
+        background-color: lightgray;
+        width: fit-content;
+      }
+      .horizontal-nav a {
+        padding: 10px;
+        text-decoration: none;
+        color: blue;
+        border-right: 1px solid blue;
+      }
+      .horizontal-nav a:first-child {
+        background-color: gray;
+        color: white;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS: Task-2</h1>
+    <h3>Vertical Navigation Bar</h3>
+    <div class="vertical-nav">
+      <a href="https://www.w3schools.com/">Home</a>
+      <a href="https://www.w3schools.com/java/default.asp">Java</a>
+      <a href="https://www.w3schools.com/css/default.asp">CSS</a>
+      <a href="https://www.w3schools.com/html/default.asp">HTML</a>
+      <a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp"
+        >Bootstrap</a
+      >
+    </div>
+
+    <h3>Horizontal Navigation Bar</h3>
+    <div class="horizontal-nav">
+      <a href="https://www.w3schools.com/">Home</a>
+      <a href="https://www.w3schools.com/java/default.asp">Java</a>
+      <a href="https://www.w3schools.com/css/default.asp">HTML</a>
+      <a href="https://www.w3schools.com/html/default.asp">CSS</a>
+      <a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp"
+        >Bootstrap</a
+      >
+    </div>
+  </body>
+</html>

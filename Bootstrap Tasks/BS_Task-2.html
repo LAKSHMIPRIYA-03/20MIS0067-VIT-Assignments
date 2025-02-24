@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BS_Task-2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <style>
+      /* Custom Styles */
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .top-header {
+        background: #f1b302;
+        padding: 10px 0;
+      }
+      .top-header .info {
+        font-size: 14px;
+        color: black;
+      }
+      .navbar {
+        background: #0c1a33;
+        font-size: 15px;
+        font-weight:500 ;
+      }
+      .navbar a {
+        color: white !important;
+        font-weight: bold;
+      }
+      .hero {
+        background: url("./images/image2.jpeg") center/cover no-repeat;
+        height: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        position: relative;
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+      }
+      .hero-content {
+        position: relative;
+        z-index: 2;
+      }
+      .hero h1 {
+        font-size: 40px;
+        font-weight: bold;
+      }
+      .hero .btn-quote {
+        background: #f1b302;
+        color: black;
+        padding: 10px 20px;
+        font-weight: bold;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+      .features {
+        background: #0c1a33;
+        color: white;
+        padding: 5px 0;
+      }
+      .feature-box {
+        padding: 40px 20px;
+        text-align: center;
+        position: relative;
+        
+      }
+      .feature-box i {
+        font-size: 50px;
+        color: #f1b302;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 50%;
+        border: 2px dashed #f1b302;
+        width: 80px;
+        height: 80px;
+        line-height: 60px;
+      }
+      .feature-box h4 {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+
+      .feature-box p {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .yellow-bg {
+        background: #f1b302;
+        color: black;
+      }
+
+      .yellow-bg .feature-box i {
+        color: black;
+        border-color: black;
+      }
+
+      .yellow-bg p {
+        color: rgba(0, 0, 0, 0.8);
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div class="top-header py-3" style="background-color: #f4b41a">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Logo -->
+        <h2 class="fw-bolder display-5 mb-0">Builderz</h2>
+
+        <!-- Contact Info -->
+        <div class="d-flex gap-5">
+          <!-- Opening Hours -->
+          <div class="d-flex align-items-center me-4">
+            <i class="fa-regular fa-calendar-days fa-2x me-3"></i>
+            <div>
+              <h6 class="fw-bold mb-0">Opening Hour</h6>
+              <p class="mb-0">Mon - Fri, 8:00 - 9:00</p>
+            </div>
+          </div>
+
+          <!-- Call Us -->
+          <div class="d-flex align-items-center me-4">
+            <i class="fa-solid fa-phone fa-2x me-2"></i>
+            <div>
+              <h6 class="fw-bold mb-0">Call Us</h6>
+              <p class="mb-0">+012 345 6789</p>
+            </div>
+          </div>
+
+          <!-- Email Us -->
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-envelope fa-2x me-2"></i>
+            <div>
+              <h6 class="fw-bold mb-0">Email Us</h6>
+              <p class="mb-0">info@example.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg style="background-color: #0b132b; padding: 15px 0;">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="#" style="color: #f4b41a; font-weight: bold;">HOME</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">SERVICE</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">TEAM</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">PROJECT</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">PAGES</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">CONTACT</a></li>
+          </ul>
+        </div>
+        <a href="#" class="btn btn-outline-light px-4 py-2" style="border-radius: 3px; border: 1px solid white;">Get A Quote</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero-content">
+        <h3>We Are Professional</h3>
+        <h1>For Your Dream Project</h1>
+      </br>
+        <a href="#" class="btn-quote">Get A Quote</a>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="container-fluid features">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="feature-box">
+            <i class="fa-solid fa-users"></i>
+            <h4>Expert Workers</h4>
+            <p>
+                Our team consists of highly skilled professionals with years 
+                of experience in the field. We are dedicated to delivering 
+                top-notch craftsmanship and quality results.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 yellow-bg">
+          <div class="feature-box">
+            <i class="fa-solid fa-hammer"></i>
+            <h4>Quality Work</h4>
+            <p>
+                We ensure the highest standards in every project we undertake. 
+                Our commitment to excellence guarantees durable and 
+                aesthetically pleasing outcomes.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-box">
+            <i class="fa-solid fa-headset"></i>
+            <h4>24/7 Support</h4>
+            <p>
+                Our customer support team is available around the clock to 
+                assist you.  we are here to help anytime.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
